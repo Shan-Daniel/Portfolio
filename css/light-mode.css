@@ -1,0 +1,32 @@
+.light {
+    color-scheme: light;
+}
+
+.light body {
+    background-color: #f3f4f6;
+    color: #111827;
+}
+
+.light .bg-gray-800 {
+    background-color: #ffffff;
+}
+
+.light .bg-gray-900 {
+    background-color: #f3f4f6;
+}
+
+.light .text-gray-200 {
+    color: #111827;
+}
+
+.light .text-gray-300 {
+    color: #4b5563;
+}
+
+.light .border-gray-600 {
+    border-color: #d1d5db;
+}
+
+.light .bg-gray-700 {
+    background-color: #f9fafb;
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Shan Daniel S</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/dark-mode.css" rel="stylesheet">
+    <link href="css/light-mode.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white dark:bg-gray-800 shadow-md z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">SD</a>
+            <div class="flex items-center space-x-4">
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="index.html"
+                            class="text-gray-800 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">Home</a>
+                    </li>
+                    <li><a href="about.html"
+                            class="text-gray-800 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">About</a>
+                    </li>
+                    <li><a href="education.html"
+                            class="text-gray-800 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">Education</a>
+                    </li>
+                    <li><a href="experience.html"
+                            class="text-gray-800 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">Experience</a>
+                    </li>
+                    <li><a href="skills.html"
+                            class="text-gray-800 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">Skills</a>
+                    </li>
+                    <li><a href="projects.html" class="text-indigo-600 dark:text-indigo-400 font-semibold">Projects</a>
+                    </li>
+                    <li><a href="contact.html"
+                            class="text-gray-800 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">Contact</a>
+                    </li>
+                </ul>
+                <button id="theme-toggle" class="p-2 rounded-full bg-gray-200 dark:bg-gray-700">
+                    <i class="fas fa-moon dark:hidden"></i>
+                    <i class="fas fa-sun hidden dark:block text-yellow-300"></i>
+                </button>
+                <button id="mobile-menu-button" class="md:hidden p-2 rounded-full bg-gray-200 dark:bg-gray-700">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-800 px-6 py-3">
+            <ul class="space-y-4">
+                <li><a href="index.html"
+                        class="block text-gray-800 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">Home</a>
+                </li>
+                <li><a href="about.html"
+                        class="block text-gray-800 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">About</a>
+                </li>
+                <li><a href="education.html"
+                        class="block text-gray-800 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">Education</a>
+                </li>
+                <li><a href="experience.html"
+                        class="block text-gray-800 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">Experience</a>
+                </li>
+                <li><a href="skills.html"
+                        class="block text-gray-800 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">Skills</a>
+                </li>
+                <li><a href="projects.html"
+                        class="block text-indigo-600 dark:text-indigo-400 font-semibold">Projects</a></li>
+                <li><a href="contact.html"
+                        class="block text-gray-800 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="pt-32 pb-20 bg-white dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-12">My Projects</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="h-48 overflow-hidden">
+                        <img src="assets/images/project1.jpg" alt="Digital Prescription Recognizer"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Digital Prescription
+                            Recognizer</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            Utilized OCR and speech synthesis to convert digital prescriptions into readable text and
+                            speech.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 rounded-full text-sm">JavaScript</span>
+                            <span
+                                class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 rounded-full text-sm">OCR</span>
+                            <span
+                                class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 rounded-full text-sm">Speech
+                                Synthesis</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-indigo-600 dark:text-indigo-400 hover:underline">View Demo</a>
+                            <a href="#" class="text-indigo-600 dark:text-indigo-400 hover:underline">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="h-48 overflow-hidden">
+                        <img src="assets/images/project2.jpg" alt="Online Pharmacy System"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Online Pharmacy System</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            Developed a web-based platform for managing prescriptions and ordering medicines online.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 rounded-full text-sm">HTML/CSS</span>
+                            <span
+                                class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 rounded-full text-sm">JavaScript</span>
+                            <span
+                                class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 rounded-full text-sm">PHP</span>
+                            <span
+                                class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 rounded-full text-sm">MySQL</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-indigo-600 dark:text-indigo-400 hover:underline">View Demo</a>
+                            <a href="#" class="text-indigo-600 dark:text-indigo-400 hover:underline">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="h-48 overflow-hidden bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+                        <i class="fas fa-project-diagram text-5xl text-gray-400 dark:text-gray-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Portfolio Website</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            Designed and developed this responsive portfolio website to showcase my projects and skills.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 rounded-full text-sm">HTML</span>
+                            <span
+                                class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 rounded-full text-sm">CSS</span>
+                            <span
+                                class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 rounded-full text-sm">JavaScript</span>
+                            <span
+                                class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 rounded-full text-sm">Tailwind
+                                CSS</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-indigo-600 dark:text-indigo-400 hover:underline">View Live</a>
+                            <a href="#" class="text-indigo-600 dark:text-indigo-400 hover:underline">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="h-48 overflow-hidden bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+                        <i class="fas fa-tasks text5xl text-gray-400 dark:text-gray-500"></i>
+                    </div>
+                    <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Task Management App</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                    A simple task management application with drag-and-drop functionality and local storage.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 rounded-full text-sm">React</span>
+                    <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 rounded-full text-sm">Tailwind CSS</span>
+                    <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 rounded-full text-sm">Drag & Drop API</span>
+                    </div>
+                    <div class="flex space-x-4">
+                    <a href="#" class="text-indigo-600 dark:text-indigo-400 hover:underline">View Demo</a>
+                    <a href="#" class="text-indigo-600 dark:text-indigo-400 hover:underline">Source Code</a>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </section>
+                    
+                    <!-- Call to Action -->
+                    <section class="py-12 bg-indigo-600 dark:bg-indigo-800">
+                        <div class="container mx-auto px-6 text-center">
+                            <h3 class="text-2xl font-semibold text-white mb-6">Have a project in mind?</h3>
+                            <p class="text-indigo-100 mb-8 max-w-2xl mx-auto">
+                                I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, I'll get back to you!
+                            </p>
+                            <a href="contact.html" class="inline-block px-8 py-3 bg-white text-indigo-600 font-semibold rounded-full hover:bg-gray-100 transition duration-300 transform hover:scale-105 shadow-lg">Get In Touch</a>
+                        </div>
+                    </section>
+                    
+                    <!-- Footer -->
+                    <footer class="bg-gray-800 text-white py-8">
+                        <div class="container mx-auto px-6 text-center">
+                            <div class="flex justify-center space-x-6 mb-6">
+                                <a href="#" class="text-gray-300 hover:text-white transition duration-300">
+                                    <i class="fab fa-github text-2xl"></i>
+                                </a>
+                                <a href="#" class="text-gray-300 hover:text-white transition duration-300">
+                                    <i class="fab fa-linkedin text-2xl"></i>
+                                </a>
+                                <a href="#" class="text-gray-300 hover:text-white transition duration-300">
+                                    <i class="fab fa-twitter text-2xl"></i>
+                                </a>
+                            </div>
+                            <p class="text-gray-300">&copy; 2023 Shan Daniel S. All rights reserved.</p>
+                        </div>
+                    </footer>
+                    
+                    <script src="js/main.js"></script>
+                    <script src="js/theme-switcher.js"></script>
+                    <script src="js/animations.js"></script>
+                </body> </html>

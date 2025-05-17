@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Shan Daniel S</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/dark-mode.css" rel="stylesheet">
+    <link href="css/light-mode.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white dark:bg-gray-800 shadow-md z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">SD</a>
+            <div class="flex items-center space-x-4">
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="index.html"
+                            class="text-gray-800 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">Home</a>
+                    </li>
+                    <li><a href="about.html"
+                            class="text-gray-800 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">About</a>
+                    </li>
+                    <li><a href="education.html"
+                            class="text-gray-800 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">Education</a>
+                    </li>
+                    <li><a href="experience.html"
+                            class="text-gray-800 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">Experience</a>
+                    </li>
+                    <li><a href="skills.html"
+                            class="text-gray-800 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">Skills</a>
+                    </li>
+                    <li><a href="projects.html"
+                            class="text-gray-800 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">Projects</a>
+                    </li>
+                    <li><a href="contact.html" class="text-indigo-600 dark:text-indigo-400 font-semibold">Contact</a>
+                    </li>
+                </ul>
+                <button id="theme-toggle" class="p-2 rounded-full bg-gray-200 dark:bg-gray-700">
+                    <i class="fas fa-moon dark:hidden"></i>
+                    <i class="fas fa-sun hidden dark:block text-yellow-300"></i>
+                </button>
+                <button id="mobile-menu-button" class="md:hidden p-2 rounded-full bg-gray-200 dark:bg-gray-700">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-800 px-6 py-3">
+            <ul class="space-y-4">
+                <li><a href="index.html"
+                        class="block text-gray-800 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">Home</a>
+                </li>
+                <li><a href="about.html"
+                        class="block text-gray-800 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">About</a>
+                </li>
+                <li><a href="education.html"
+                        class="block text-gray-800 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">Education</a>
+                </li>
+                <li><a href="experience.html"
+                        class="block text-gray-800 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">Experience</a>
+                </li>
+                <li><a href="skills.html"
+                        class="block text-gray-800 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">Skills</a>
+                </li>
+                <li><a href="projects.html"
+                        class="block text-gray-800 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">Projects</a>
+                </li>
+                <li><a href="contact.html" class="block text-indigo-600 dark:text-indigo-400 font-semibold">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="pt-32 pb-20 bg-white dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-12">Get In Touch</h2>
+
+            <div class="flex flex-col md:flex-row gap-12 max-w-6xl mx-auto">
+                <!-- Contact Form -->
+                <div class="md:w-1/2">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 dark:text-gray-300 mb-2">Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:text-white">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 dark:text-gray-300 mb-2">Email</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:text-white">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 dark:text-gray-300 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" required
+                                class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:text-white"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-700 transition duration-300 w-full">
+                            Send Message
+                        </button>
+                    </form>
+                    <div id="form-success"
+                        class="hidden mt-4 p-4 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-md">
+                        Your message has been sent successfully!
+                    </div>
+                    <div id="form-error"
+                        class="hidden mt-4 p-4 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 rounded-md">
+                        There was an error sending your message. Please try again.
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="md:w-1/2">
+                    <div class="bg-gray-50 dark:bg-gray-700 p-8 rounded-lg shadow-md h-full">
+                        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-indigo-100 dark:bg-indigo-900 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-indigo-600 dark:text-indigo-300"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800 dark:text-white">Email</h4>
+                                    <a href="mailto:shandaniel727@gmail.com"
+                                        class="text-indigo-600 dark:text-indigo-400 hover:underline">shandaniel727@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-indigo-100 dark:bg-indigo-900 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone text-indigo-600 dark:text-indigo-300"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800 dark:text-white">Phone</h4>
+                                    <a href="tel:9080984345"
+                                        class="text-indigo-600 dark:text-indigo-400 hover:underline">9080984345</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-indigo-100 dark:bg-indigo-900 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-indigo-600 dark:text-indigo-300"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800 dark:text-white">Location</h4>
+                                    <p class="text-gray-600 dark:text-gray-300">Erode, Tamil Nadu, India</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-medium text-gray-800 dark:text-white mb-4">Connect with me</h4>
+                            <div class="flex space-x-4">
+                                <a href="#"
+                                    class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition duration-300">
+                                    <i class="fab fa-github text-2xl"></i>
+                                </a>
+                                <a href="#"
+                                    class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition duration-300">
+                                    <i class="fab fa-linkedin text-2xl"></i>
+                                </a>
+                                <a href="#"
+                                    class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition duration-300">
+                                    <i class="fab fa-twitter text-2xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="text-gray-300 hover:text-white transition duration-300">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+                <a href="#" class="text-gray-300 hover:text-white transition duration-300">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+                <a href="#" class="text-gray-300 hover:text-white transition duration-300">
+                    <i class="fab fa-twitter text-2xl"></i>
+                </a>
+            </div>
+            <p class="text-gray-300">&copy; 2023 Shan Daniel S. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/theme-switcher.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/email.js"></script>
+</body>
+
+</html>

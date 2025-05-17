@@ -1,0 +1,39 @@
+.dark {
+    color-scheme: dark;
+}
+
+.dark body {
+    background-color: #111827;
+    color: #f3f4f6;
+}
+
+.dark .bg-white {
+    background-color: #1f2937;
+}
+
+.dark .bg-gray-100 {
+    background-color: #111827;
+}
+
+.dark .text-gray-800 {
+    color: #f3f4f6;
+}
+
+.dark .text-gray-600 {
+    color: #d1d5db;
+}
+
+.dark .border-gray-300 {
+    border-color: #4b5563;
+}
+
+.dark .bg-gray-50 {
+    background-color: #1f2937;
+}
+
+.dark .performance-chart path.text-gray-200 {
+    stroke: #374151;
+}
+
+.dark .performance-chart::after {
+    color: #f3f4f6; }
