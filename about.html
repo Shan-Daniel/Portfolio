@@ -77,52 +77,51 @@
     </nav>
 
     <!-- About Section -->
-    <section class="pt-32 pb-20 bg-white dark:bg-gray-800">
+    <section id="about" class="py-20 bg-white dark:bg-gray-800">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-12 anime-impact">About Me</h2>
             <div class="flex flex-col md:flex-row items-center">
+                <!-- Profile Image -->
                 <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
-                    <div class="relative group card-hover">
-                        <img src="assets/images/profile.jpg" alt="Shan Daniel S"
+                    <div class="relative group">
+                        <img src="images/profile.jpg" alt="Shan Daniel S"
                             class="w-64 h-64 rounded-full object-cover border-4 border-indigo-500 shadow-lg transform group-hover:scale-105 transition duration-300">
                         <div
                             class="absolute inset-0 rounded-full border-4 border-transparent group-hover:border-indigo-300 transition duration-300">
                         </div>
                     </div>
                 </div>
+    
+                <!-- About Content -->
                 <div class="md:w-2/3 md:pl-12">
                     <p class="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                        I am Shan Daniel S, passionate about front-end development and deeply interested in coding.
-                        Currently pursuing a B.E. in Computer Science and Engineering at KIT KALAIGNARKARUNANIDHI
-                        INSTITUTE OF TECHNOLOGY (Graduation: 2026).
+                        Hi, I'm Shan Daniel S, a passionate Computer Engineering student and aspiring Full Stack Developer. I love building
+                        websites that are not just functional, but also visually engaging and user-friendly.
+                        
+                        Currently in my third year of engineering, I've already completed internships in web development at Novitech and
+                        Codesoft, where I gained real-world experience creating responsive, interactive web applications.
+                        
+                        I enjoy learning and experimenting with both front-end and back-end technologies. Whether it’s crafting sleek interfaces
+                        with HTML, CSS, JavaScript, and Tailwind CSS, or handling logic and data with Node.js, Express, and MongoDB, I’m always
+                        excited to build and improve.
+
                     </p>
-                    <p class="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                        My journey in web development started when I first discovered how code can bring creative ideas
-                        to life. Since then, I've been dedicated to learning and mastering the art of creating
-                        beautiful, functional, and accessible web experiences.
-                    </p>
-                    <p class="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                        I believe in continuous learning and staying updated with the latest technologies and trends in
-                        web development. My approach combines technical skills with an eye for design to create products
-                        that are both functional and visually appealing.
-                    </p>
-                    <p class="text-lg text-gray-600 dark:text-gray-300">
-                        When I'm not coding, you can find me exploring new technologies, contributing to open-source
-                        projects, or working on personal projects to expand my skill set.
-                    </p>
-                    <div class="mt-8 flex space-x-4">
-                        <a href="assets/resume.pdf" download
-                            class="inline-block px-6 py-2 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-700 transition duration-300 transform hover:scale-105">Download
-                            Resume</a>
-                        <!-- Make buttons finger-friendly -->
-                        <a href="contact.html" class="anime-btn" style="min-width: 120px; padding: 1rem;">
-                            Contact Me
-                            </a>
+    
+                    <!-- Resume Download Button -->
+                    <div class="mt-8">
+                        <a href="docs/resume.pdf" download="Shan_Daniel_Resume.pdf"
+                            class="inline-flex items-center px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition duration-300 anime-btn">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                            </svg>
+                            Download Resume
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+        </section>
 
     <!-- Skills Preview -->
     <section class="py-12 bg-gray-100 dark:bg-gray-900">

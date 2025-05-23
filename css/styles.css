@@ -14,7 +14,13 @@ body {
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
 }
 
-/* Signature Style (Enhanced) */
+html,
+body {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Signature Style */
 .anime-signature {
     font-family: 'Playwrite DK', cursive;
     font-weight: 400;
@@ -22,7 +28,7 @@ body {
     font-size: 4.5rem;
     line-height: 1;
     letter-spacing: -0.02em;
-    background: linear-gradient(90deg, #4f46e5, #9333ea, #ec4899);
+    background: linear-gradient(90deg, #ededf0, #fffeff, #ec4899);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -53,13 +59,7 @@ body {
     transform: scaleX(1);
 }
 
-@media (max-width: 768px) {
-    .anime-signature {
-        font-size: 3rem;
-    }
-}
-
-/* Enhanced Section Headings */
+/* Section Headings */
 h2 {
     position: relative;
     display: inline-block;
@@ -78,7 +78,7 @@ h2::after {
     border-radius: 3px;
 }
 
-/* Decorative Card Styles */
+/* Cards */
 .card-hover {
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transform-style: preserve-3d;
@@ -95,9 +95,7 @@ h2::after {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: linear-gradient(to bottom right,
-            rgba(79, 70, 229, 0.1) 0%,
-            rgba(0, 0, 0, 0) 50%);
+    background: linear-gradient(to bottom right, rgba(79, 70, 229, 0.1) 0%, rgba(0, 0, 0, 0) 50%);
     transform: rotate(30deg);
     transition: all 0.6s ease;
     opacity: 0;
@@ -109,7 +107,7 @@ h2::after {
     left: -30%;
 }
 
-/* Enhanced Buttons */
+/* Buttons */
 .anime-btn {
     transition: all 0.3s ease;
     position: relative;
@@ -138,6 +136,7 @@ h2::after {
     animation: gradientBG 4s ease infinite;
 }
 
+/* Keyframes */
 @keyframes gradientBG {
     0% {
         background-position: 0% 50%;
@@ -152,21 +151,24 @@ h2::after {
     }
 }
 
-/* Decorative Background Elements */
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image:
-        radial-gradient(circle at 10% 20%, rgba(79, 70, 229, 0.05) 0%, transparent 20%),
-        radial-gradient(circle at 90% 80%, rgba(147, 51, 234, 0.05) 0%, transparent 20%);
-    z-index: -1;
+@keyframes powerUp {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    70% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
-/* Scrollbar (Enhanced) */
+/* Scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -182,7 +184,7 @@ body::before {
     border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
-/* Selection Style */
+/* Selection */
 ::selection {
     background: rgba(79, 70, 229, 0.3);
     color: inherit;
@@ -204,52 +206,21 @@ textarea:focus {
     box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
 }
 
-/* Exceptions for non-italic elements */
-.anime-signature,
-button,
-input,
-textarea,
-select,
-.anime-btn,
-.anime-impact,
-.card-hover,
-.anime-power-up {
-    font-style: normal !important;
+/* Decorative Background */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        radial-gradient(circle at 10% 20%, rgba(79, 70, 229, 0.05) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, rgba(147, 51, 234, 0.05) 0%, transparent 20%);
+    z-index: -1;
 }
 
-/* Keep all your existing animations below */
-@keyframes powerUp {
-    0% {
-        transform: scale(0.8);
-        opacity: 0;
-    }
-
-    70% {
-        transform: scale(1.05);
-        opacity: 1;
-    }
-
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-/* ... (keep all your existing animation keyframes) ... */
-
-/* Responsive Adjustments */
-@media (max-width: 640px) {
-    body::before {
-        background-size: 150% 150%;
-    }
-
-    .card-hover::before {
-        width: 300%;
-        height: 300%;
-    }
-}
-
-/* Performance Charts */
+/* Performance Chart */
 .performance-chart {
     position: relative;
     width: fit-content;
@@ -265,7 +236,7 @@ select,
 }
 
 .performance-chart::after {
-    content: attr(data-percent)'%';
+    content: attr(data-percent) '%';
     position: absolute;
     top: 50%;
     left: 50%;
@@ -275,7 +246,7 @@ select,
     font-style: normal;
 }
 
-/* Color variants */
+/* Chart Color Variants */
 .performance-chart[data-color="from-indigo-500 to-purple-600"] path.stroke-current {
     stroke: url(#indigoGradient);
 }
@@ -288,32 +259,36 @@ select,
     stroke: url(#yellowGradient);
 }
 
-/* SVG Gradients */
 svg.defs-only {
     position: absolute;
     height: 0;
     width: 0;
+    overflow: hidden;
     margin: 0;
     padding: 0;
     border: none;
-    overflow: hidden; }
-
-/* Prevent unwanted touch behaviors */
-html,
-body {
-    touch-action: manipulation;
-    -webkit-tap-highlight-color: transparent;
 }
 
-/* Fix mobile hover states */
-@media (hover: none) {
+/* Prevent italic override */
+.anime-signature,
+button,
+input,
+textarea,
+select,
+.anime-btn,
+.anime-impact,
+.card-hover,
+.anime-power-up {
+    font-style: normal !important;
+}
 
-    .card-hover:hover,
-    .anime-btn:hover {
-        transform: none !important;
-    } }
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .anime-signature {
+        font-size: 3rem;
+    }
+}
 
-/* Mobile typography */
 @media (max-width: 640px) {
     html {
         font-size: 14px;
@@ -325,23 +300,36 @@ body {
 
     h2 {
         font-size: 1.5rem !important;
-    } }    
+    }
 
-        @media (max-width: 640px) {
-            .performance-chart {
-                width: 100px !important;
-                height: 100px !important;
-            }
-    
-            .performance-chart::after {
-                font-size: 1rem !important;
-            }     }    
+    .performance-chart {
+        width: 100px !important;
+        height: 100px !important;
+    }
 
-/* Hide decorative elements on mobile */
-@media (max-width: 640px) {
+    .performance-chart::after {
+        font-size: 1rem !important;
+    }
+
+    .card-hover::before {
+        width: 300%;
+        height: 300%;
+    }
+
     body::before {
         display: none;
-    } }            
+    }
+}
 
-        .is-mobile .card-hover:hover {
-            transform: none !important;     }    
+/* Fix hover effects on mobile */
+@media (hover: none) {
+
+    .card-hover:hover,
+    .anime-btn:hover {
+        transform: none !important;
+    }
+}
+
+.is-mobile .card-hover:hover {
+    transform: none !important;
+}
